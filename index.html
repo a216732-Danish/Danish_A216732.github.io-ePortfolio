@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student e-Portfolio | Danish Ariffin</title>
+<meta name="description" content="e-Portfolio: labs, SQL injection vulnerability projects, reflection, skills and resources.">
+<style>
+:root{--bg:#f6f8fc;--card:#fff;--text:#1b2433;--muted:#5b6678;--primary:#2563eb;--primary-d:#1d4ed8;--border:#e2e8f0;--shadow:0 4px 18px rgba(15,23,42,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1420;--card:#161e2e;--text:#e8edf6;--muted:#9aa7bd;--primary:#60a5fa;--primary-d:#93c5fd;--border:#25304a;--shadow:0 4px 18px rgba(0,0,0,.4)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--primary)}
+nav{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--border);box-shadow:var(--shadow)}
+.nav-in{max-width:1100px;margin:auto;padding:.7rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:700;text-decoration:none;color:var(--text)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:.25rem;flex-wrap:wrap}
+nav ul a{display:block;padding:.4rem .8rem;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.95rem;font-weight:500}
+nav ul a:hover,nav ul a:focus-visible{background:var(--primary);color:#fff;outline:none}
+header.hero{background:linear-gradient(135deg,#1e3a8a,#2563eb 60%,#06b6d4);color:#fff;padding:4rem 1rem 3.5rem}
+.wrap{max-width:1100px;margin:auto;padding:0 1rem}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);margin:.2rem 0}
+.hero p{max-width:760px;opacity:.95}
+.tag{display:inline-block;background:rgba(255,255,255,.18);padding:.25rem .8rem;border-radius:999px;font-size:.85rem;margin:0 .4rem .4rem 0}
+section{padding:3.2rem 0}
+section h2{font-size:1.8rem;margin:0 0 .4rem}
+.lead{color:var(--muted);margin:0 0 1.6rem;max-width:760px}
+.grid{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.card .body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.card h3{margin:0;font-size:1.15rem}
+.card p{margin:0}
+.video{position:relative;aspect-ratio:16/9;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reflect{border-left:4px solid var(--primary);padding:.4rem .8rem;background:rgba(37,99,235,.07);border-radius:0 8px 8px 0;font-size:.95rem}
+.reflect strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--primary)}
+.btn{display:inline-block;margin-top:auto;align-self:flex-start;background:var(--primary);color:#fff;text-decoration:none;padding:.55rem 1.1rem;border-radius:10px;font-weight:600}
+.btn:hover,.btn:focus-visible{background:var(--primary-d);outline:2px solid var(--primary-d);outline-offset:2px}
+.member{padding:1.2rem}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:.4rem}
+.meta{color:var(--muted);font-size:.9rem}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.4rem;box-shadow:var(--shadow)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;list-style:none;margin:0}
+.chips li{background:var(--card);border:1px solid var(--border);padding:.45rem .9rem;border-radius:999px;font-weight:500;box-shadow:var(--shadow)}
+.alt{background:rgba(37,99,235,.04)}
+footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:2rem 1rem}
+footer strong{color:#fff}
+@media (max-width:600px){.nav-in{justify-content:center}nav ul{justify-content:center}.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="nav-in">
+    <a class="brand" href="#home">📘 A216732 - DANISH ARIFFIN BIN KAMRUL ARIFFIN</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <span class="tag">Bachelor in Computer Science with Honours</span>
+    <span class="tag">Network Technology</span>
+    <h1>Student e-Portfolio</h1>
+    <p><strong>Instructor:</strong> TS. DR. NUR HANIS SABRINA BINTI SUHAIMI</p>
+    <p><strong>Scenario:</strong> [WRITE YOUR INTRO – 2 to 3 sentences describing the scenario of your project.]</p>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="team-h">
+    <div class="wrap">
+      <h2 id="team-h">Group Members</h2>
+      <p class="lead">Programme: Bachelor in Computer Science with Honours – Network Technology</p>
+      <div class="grid">
+        <article class="card member">
+          <div class="avatar" role="img" aria-label="Initials avatar for member 1">1</div>
+          <h3>[YOUR NAME]</h3>
+          <p class="meta">Matric No: [YOUR MATRIC] · Role: [Group Member]</p>
+          <p><strong>Contribution:</strong> [Contribution]</p>
+        </article>
+        <article class="card member">
+          <div class="avatar" role="img" aria-label="Initials avatar for Danish Ariffin">DA</div>
+          <h3>DANISH ARIFFIN BIN KAMRUL ARIFFIN</h3>
+          <p class="meta">Matric No: A216732 · Role: [Your Role]</p>
+          <p><strong>Contribution:</strong> [Contribution]</p>
+        </article>
+        <article class="card member">
+          <div class="avatar" role="img" aria-label="Initials avatar for member 3">3</div>
+          <h3>[YOUR NAME]</h3>
+          <p class="meta">Matric No: [YOUR MATRIC] · Role: [Your Role]</p>
+          <p><strong>Contribution:</strong> [Contribution]</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="labs" class="alt" aria-labelledby="labs-h">
+    <div class="wrap">
+      <h2 id="labs-h">Labs</h2>
+      <p class="lead">Weekly lab exercises with demo videos and short reflections. Replace VIDEO_ID with your YouTube video ID.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 1 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Lab 1: [Lab Title]</h3>
+            <p>[Short description of the lab objective and what was done.]</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 sentences about what you learned, challenges faced and how you overcame them.]</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 2 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Lab 2: [Lab Title]</h3>
+            <p>[Short description of the lab objective and what was done.]</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 sentences about what you learned, challenges faced and how you overcame them.]</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="proj-h">
+    <div class="wrap">
+      <h2 id="proj-h">Projects: [NAME]</h2>
+      <p class="lead"><strong>Problem Statement:</strong> [1–2 SENTENCES]</p>
+      <h3>Vulnerability Solution</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 1 Login Test video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 1: Login Test</h3>
+            <p>Live code vulnerability implementation for the login test case.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 2 Data 1 video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 2: Data 1</h3>
+            <p>Live code vulnerability implementation for the Data 1 case.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 3 Data 2 video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 3: Data 2</h3>
+            <p>Live code vulnerability implementation for the Data 2 case.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 4 SQL Injection video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 4: SQL Injection</h3>
+            <p>Live code vulnerability implementation for the SQL injection case.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 5 video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 5: Placeholder 1</h3>
+            <p>Live code vulnerability implementation for case 5.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 6 video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="body">
+            <h3>Case 6: Placeholder 2</h3>
+            <p>Live code vulnerability implementation for case 6.</p>
+            <p class="reflect"><strong>Reflection</strong>[2–3 SENTENCES]</p>
+            <a class="btn" href="[LINK]" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reflection" class="alt" aria-labelledby="ref-h">
+    <div class="wrap">
+      <h2 id="ref-h">Reflection &amp; Learning Journey</h2>
+      <div class="panel"><p>[3–4 SENTENCES]</p></div>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <h2 id="skills-h">Skills &amp; Tech Stack</h2>
+      <ul class="chips">
+        <li>SQL Injection</li>
+        <li>Python</li>
+        <li>Room</li>
+        <li>Retrofit</li>
+        <li>Firebase Firestore</li>
+        <li>ML Kit</li>
+        <li>CameraX</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resources" class="alt" aria-labelledby="res-h">
+    <div class="wrap">
+      <h2 id="res-h">Resources</h2>
+      <div class="panel">
+        <h3>APIs &amp; Libraries Used</h3>
+        <ul>
+          <li>[API / Library 1]</li>
+          <li>[API / Library 2]</li>
+          <li>[API / Library 3]</li>
+        </ul>
+        <h3>Acknowledgement of AI Assistance</h3>
+        <p>[AI tools were used to assist with code structuring, debugging and drafting content. All outputs were reviewed, tested and understood by the group members.]</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>DANISH ARIFFIN BIN KAMRUL ARIFFIN</strong> · Matric No: A216732 · &copy; <span id="yr">2026</span></p>
+  <p>Bachelor in Computer Science with Honours – Network Technology</p>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
